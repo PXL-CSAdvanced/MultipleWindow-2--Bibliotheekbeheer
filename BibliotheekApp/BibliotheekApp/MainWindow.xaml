@@ -1,0 +1,17 @@
+﻿<Window x:Class="BibliotheekApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BibliotheekApp"
+        mc:Ignorable="d"
+        Title="Bibliotheek App" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <ListBox Name="booksListBox" Margin="10,5,324,5"/>
+        <Button Name="addBookButton" Content="Nieuw Boek" HorizontalAlignment="Left" Margin="494,19,0,0" VerticalAlignment="Top" Height="47" Width="288" Click="addBookButton_Click"/>
+        <Button Name="editBookButton" Content="Bewerk Boek" HorizontalAlignment="Left" Margin="494,83,0,0" VerticalAlignment="Top" Height="47" Width="288" Click="editBookButton_Click" />
+        <Button Name="deleteBookButton" Content="Verwijder Boek" HorizontalAlignment="Left" Margin="494,148,0,0" VerticalAlignment="Top" Height="47" Width="288" Click="deleteBookButton_Click" />
+        <Button Name="lendBookButton" Content="Uitlenen" HorizontalAlignment="Left" Margin="494,217,0,0" VerticalAlignment="Top" Height="47" Width="288" Click="lendBookButton_Click"/>
+
+    </Grid>
+</Window>

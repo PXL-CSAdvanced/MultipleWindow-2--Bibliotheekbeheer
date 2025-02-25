@@ -1,4 +1,4 @@
-# Bibliotheekbeheer Systeem - Opdracht
+# Bibliotheekbeheer Systeem
 Ontwikkel een applicatie die de volgende functionaliteiten biedt:
 
 ### Boekenbeheer
@@ -18,9 +18,6 @@ Vereiste invoervelden zijn:
 
 - **Uitlenen:**  
   Open een modaal venster (LendBookForm) waarin een gebruiker een lid selecteert uit een vooraf gedefinieerde lijst. Het geselecteerde boek wordt dan gemarkeerd als uitgeleend (IsAvailable = false) en de naam van het lid wordt opgeslagen.
-
-- **Details Bekijken:**  
-  Open een modeless venster (BookDetailsForm) dat de volledige details van een geselecteerd boek in read-only modus weergeeft. Dit venster kan open blijven tijdens andere bewerkingen.
 
 ### Communicatie tussen Vensters:
   Overdracht van data tussen vensters gebeurt via publieke properties in de modale vensters.
@@ -51,13 +48,12 @@ Vereiste invoervelden zijn:
 
 #### MainWindow
 - **Functionaliteit:**
-  - Toont een lijst met boeken (bijvoorbeeld in een ListBox of DataGrid).
+  - Toont een lijst met boeken in een ListBox.
   - Biedt knoppen voor:
     - **Nieuw Boek**: Opent het modale venster AddBookForm.
     - **Bewerk Boek**: Opent het modale venster EditBookForm.
     - **Verwijder Boek**: Verwijdert een geselecteerd boek na bevestiging.
     - **Uitlenen**: Opent het modale venster LendBookForm.
-    - **Bekijk Details**: Opent het modeless venster BookDetailsForm.
   
 #### AddBookForm
 - **Doel:**  
@@ -82,13 +78,13 @@ Vereiste invoervelden zijn:
 - **Data-overdracht:**  
   - Het geselecteerde lid wordt opgeslagen in een publieke property (`SelectedMember`).
 
-#### BookDetailsForm
-- **Doel:**  
-  Toont de volledige details van een geselecteerd boek in een modeless venster.
-- **Functionaliteit:**  
-  - Alle gegevens worden in read-only modus getoond.
-  - Dit venster kan open blijven tijdens andere bewerkingen.
-
 ## Extra Uitdagingen (optioneel)
 - Implementeer een zoekfunctie om boeken te filteren op titel, auteur of ISBN.
 - Zorg voor extra validatie en foutafhandeling bij de gebruikersinvoer.
+
+## Screenshots
+![screenshot](media/bibliotheekapp.png)
+![screenshot](media/addbook.png)
+![screenshot](media/editbook.png)
+![screenshot](media/deletebook.png)
+![screenshot](media/lendbook.png)
